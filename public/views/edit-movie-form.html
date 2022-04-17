@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Edit movie</title>
+    <link rel="stylesheet" type="text/css" href="Style/edit-movie-style.css">
+  </head>
+  <body>
+
+    <h1>Edit movie</h1>
+    <form action="/edit-movie/{{id}}" method="get">
+      Title<input type="text" name="title"  value="{{title}}"><br>
+      Year <input type="text" name="year" value="{{year}}"><br>
+      Actors names <input type="text"  name="actors" value="{{actors}}"><br>
+      Plot <input type="text" name="plot" value="{{plot}}"><br>
+      Link to poster <input type="text" name="poster" value="{{poster}}"><br>
+      <input type="submit" name="" value="Edit">
+    </form>
+  </body>
+</html>

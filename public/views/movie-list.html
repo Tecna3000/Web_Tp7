@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie List</title>
+    <link rel="stylesheet" type="text/css" href="Style/page-style.css">
+
+  </head>
+  
+  <body>
+    <h1>Movies list</h1>
+    <a id="add" href="/add-movie-form/"> +Add a movie</a> <br><br>
+    <div id="mov">
+         {{#films}}
+         <a>{{title}}</a>
+         <a href="/movie-details/{{id}}">details</a>
+         <a href="/edit-movie-form/{{id}}" >update </a>
+         <a href="/delete-movie-form/{{id}}">delete</a> <br>
+        {{/films}}
+    </div>
+  </body>
+</html>

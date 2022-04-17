@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Delete the movie</title>
+  </head>
+  <body>
+    <h1>Delete the movie</h1>
+    Do you really want to delete  "{{title}}"?
+    <form action="/">
+          <input type="submit" name="cancel" value="cancel">
+    </form>
+    
+    <form action="/delete-movie/{{id}}" method="get">
+      <input type="submit" name="delete" value="delete">
+    </form>
+
+
+  </body>
+</html>

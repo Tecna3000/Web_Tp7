@@ -1,0 +1,11 @@
+body{
+    background-color: #4f1965;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-style: italic;
+    font-weight: bold;
+}
